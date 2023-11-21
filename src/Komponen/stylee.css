@@ -1,0 +1,110 @@
+
+
+.Navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px 80px;
+    box-shadow: 0 5px 15px (0, 0, 0, 0.06);
+}
+
+#Title h1{
+
+    color: white;
+    font-family: 'Newsreader', serif;
+    font-size: 30px;
+}
+#Title h1 span{
+    color: yellow;
+    font-size: 30px;
+}
+
+#Fitur{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Fitur li{
+
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#Fitur li a{
+
+    text-decoration: none;
+    font-family: 'Newsreader', serif; 
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+#Fitur li a:hover{
+
+    color: yellow;
+}
+
+#Fitur li a.active{
+
+    color: yellow;
+}
+
+
+
+#Fitur li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#Fitur li a.active:after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#Sea input{
+    margin-right: 10px;
+    padding: 5px 20px ;
+    border-radius: 10px;
+    
+
+}
+#Sea button a{
+
+    font-family: 'Newsreader', serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    
+
+}
+#Sea button{
+
+padding: 5px 20px;
+border-radius: 10px;
+background: white
+}
+
+#Sea button:hover{
+   
+    background: blue;
+}
+
+
+
