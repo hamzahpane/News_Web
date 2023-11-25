@@ -1,21 +1,17 @@
-import { Route, Routes } from 'react-router-dom';
-import Head from './Komponen/Navbar.jsx';
-import General  from './page/General.jsx';
-import Sports  from './page/Sports.jsx';
-import Technology from './page/Technology.jsx';
-import Scince from './page/Scince.jsx';
-
+import Hero from './Component/Hero';
+import './App.css';
+import Fetch from './Api/Fetch';
 function App() {
   return (
-    <div>
-        <Head/>
-        <Routes>
-          <Route path="/General" element={<General/>}/>
-          <Route path="/Sports" element={<Sports/>}/>
-          <Route path="/Technology" element={<Technology/>}/>
-          <Route path="/Scince" element={<Scince/>}/>
-        </Routes>
+    <>
+    <div  className="">
+
+        <Hero/>
+        <Fetch/>
     </div>
+    
+    
+    </>
   );
 }
 

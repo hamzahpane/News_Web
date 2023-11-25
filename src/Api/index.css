@@ -1,0 +1,18 @@
+.container{
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+
+.container h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.informasi{
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 40px;
+}

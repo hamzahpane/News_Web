@@ -1,0 +1,79 @@
+.Navbar{
+    padding: 10px 80px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: #1F1717;
+}
+
+.title{
+    font-family: 'Newsreader', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.title span{
+
+    color:#F4CE14 ;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+.Container{
+    display: flex;
+}
+
+.Container li{
+padding: 0 20px;
+list-style: none;
+position: relative;
+
+}
+
+
+.Container li a{
+
+text-decoration: none;
+color: white;
+font-size: 16px;
+font-weight: 500;
+font-family: 'Roboto', sans-serif; 
+}
+
+
+.Container li a:hover{
+
+    color: #F4CE14; 
+}
+
+.Container li a:hover::after{
+
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #F4CE14;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    
+}
+
+
+.Active::after{
+
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #F4CE14;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    
+}
+
+.Container li .Active:hover{
+
+    color: #F4CE14; 
+}
