@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './index.css';
 
 
 
-const Fetch = () =>{
+
+const Tecknologi = () =>{
 
     const[Data, SeData] = useState("");
     const FectData = async () =>{
 
         await axios.get(
             
-            "https://newsapi.org/v2/top-headlines?country=us&apiKey=52449f0304f04c0aaed45cac5de1f995"
+            "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=52449f0304f04c0aaed45cac5de1f995"
         
         )
         .then((res) => SeData(res.data.articles));
@@ -75,4 +75,4 @@ return (
 
 };
 
-export default Fetch;
+export default Tecknologi;

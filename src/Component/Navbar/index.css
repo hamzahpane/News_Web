@@ -61,19 +61,3 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-.Active::after{
-
-    content: "";
-    width: 30%;
-    height: 2px;
-    background-color: #F4CE14;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-    
-}
-
-.Container li .Active:hover{
-
-    color: #F4CE14; 
-}

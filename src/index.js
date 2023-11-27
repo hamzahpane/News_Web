@@ -5,7 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import Header from './Component/Navbar/Navbar';
-import Category from './Component/Category';
+import Footer from './Component/Footer';
+import General from './Page/General';
+import Bisnis from './Page/Bisnis';
+import Sports from './Page/Sports';
+import Tecknologi from './Page/Tecknologi';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,12 +19,12 @@ root.render(
     <Header/>
     <Routes>
      <Route path="/" element = {<App/>} />
-     <Route path="/general" element={<Category cat="general"/>}></Route>
-     <Route path="/business" element={<Category cat="business"/>}></Route>
-     <Route path="/sports" element={<Category cat="sports"/>}></Route>
-     <Route path="/technology" element={<Category cat="technology"/>}></Route>
-
+     <Route path="/general" element={<General/>}></Route>
+     <Route path="/business" element={<Bisnis/>}></Route>
+     <Route path="/sports" element={<Sports/>}></Route>
+     <Route path="/technology" element={<Tecknologi/>}></Route>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );  
